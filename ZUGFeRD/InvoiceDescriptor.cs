@@ -658,6 +658,7 @@ namespace s2industries.ZUGFeRD
             {
                 ChargeIndicator = !isDiscount,
                 Reason = reason,
+                //ReasonCode = xxx,
                 BasisAmount = basisAmount,
                 ActualAmount = actualAmount,
                 Currency = currency,

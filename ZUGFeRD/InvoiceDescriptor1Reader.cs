@@ -207,6 +207,7 @@ namespace s2industries.ZUGFeRD
                                                retval.Currency,
                                                _nodeAsDecimal(node, ".//ram:ActualAmount", nsmgr, 0).Value,
                                                _nodeAsString(node, ".//ram:Reason", nsmgr),
+                                               //_nodeAsString(node, ".//ram:ReasonCode", nsmgr),
                                                default(TaxTypes).FromString(_nodeAsString(node, ".//ram:CategoryTradeTax/ram:TypeCode", nsmgr)),
                                                default(TaxCategoryCodes).FromString(_nodeAsString(node, ".//ram:CategoryTradeTax/ram:CategoryCode", nsmgr)),
                                                _nodeAsDecimal(node, ".//ram:CategoryTradeTax/ram:ApplicablePercent", nsmgr, 0).Value);
